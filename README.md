@@ -36,8 +36,23 @@ In the [trello board](https://trello.com/invite/b/pXPo2Yyz/afce1f39f9ca2cc8c565c
  
  I created a [GitHub](https://github.com/MIZ-KAS/CI-CDpipeline) Repo then created a ssh-keys in my Azure Cloud Shell environment after which i clone the newly created repo into Azure Cloud Shell, screenshoot below
  
-![Git clone](Screenshoots/git-clone.PNG)
- 
+![Git clone](Screenshoots/git-clone.PNG "Project Cloned into Azure Cloud shell")
+
+
+  ## Creating the Makefile 
+  
+  ```bashinstall:
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
+	
+test:
+	python -m pytest -vv test_hello.py
+
+lint:
+		pylint --disable=R,C hello.py
+
+all: install lint test
+```
  
  
  
