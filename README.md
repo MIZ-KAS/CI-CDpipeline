@@ -134,4 +134,15 @@ Final step in the project is to set Continuous Delivery using Azure technologies
 
 ![Adding-flaskcode screenshoot](Screenshoots/adding-flaskcode.PNG "Adding-flaskcoden screenshoot")
 
+## Deploying to Azure App Services
 
+Deploy the web app to azure using az webapp up -n <your-appservice>
+
+
+```bash
+(.CI-CDpipeline) lawal@Azure:~/CI-CDpipeline$ az webapp up -n azurecicdpipeline
+```
+	
+![Deploying web app screenshoot](Screenshoots/deploy-webapp.PNG "Deploying webapp screenshoot")	
+	
+	
