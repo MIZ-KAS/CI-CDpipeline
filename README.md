@@ -80,3 +80,11 @@ source ~/.CI-CDpipeline/bin/activate
 
 ![Passed make all screenshoot](Screenshoots/passed-makeall.PNG "Passed make all screenshoot")
 
+Testing it locally to check the prediction by running python app.py and running ./make_prediction.sh to see the prediction locally 
+
+![Running python app.py screenshoot](Screenshoots/python-app-py.PNG "Running python app.py screenshoott")
+
+![Local prediction screenshoot](Screenshoots/local-prediction.PNG "Local prediction screenshoot")
+
+
+
