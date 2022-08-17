@@ -171,7 +171,22 @@ Test the remote webapp:
 	
 	
 	
+![First build screenshoot](Screenshoots/first-pipeline.PNG "First build")	
+	
+![Final build screenshoot](Screenshoots/final-build.PNG "First build")	
 	
 	
+From now on every change to your code will trigger the CI/CD pipeline and update your webapp accordingly:
+
+See below example of resent work after deployment 
+
 	
+![Example change screenshoot](Screenshoots/examplechage.PNG "Example change")	
+
+	
+## Final step 
+	
+From Azure CLI do Git pull and Push so that every thing will be upto date
+
+![Git pull and push screenshoot](Screenshoots/gitpullandpush.PNG "Git pull")
 	
