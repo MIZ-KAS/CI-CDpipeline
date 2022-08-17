@@ -32,6 +32,8 @@ In the [trello board](https://trello.com/invite/b/pXPo2Yyz/afce1f39f9ca2cc8c565c
  * In Progress and 
  * Done
 
+## CI: Set Up Azure Cloud Shell
+
  ## Create the Cloud-Based Development Environment
  
  I created a [GitHub](https://github.com/MIZ-KAS/CI-CDpipeline) Repo then created a ssh-keys in my Azure Cloud Shell environment after which i clone the newly created repo into Azure Cloud Shell, screenshoot below
@@ -87,4 +89,42 @@ Testing it locally to check the prediction by running python app.py and running 
 ![Local prediction screenshoot](Screenshoots/local-prediction.PNG "Local prediction screenshoot")
 
 
+## CI: Configure GitHub Actions
+
+This is to create a gitHub Actions to test the project upon change events in GitHub. This is a necessary step to performing Continuous Integration remotely.
+
+Enable Github Actions and replace yml code with below:
+
+```bash
+name: Python application test with Github Actions
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.5
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.5
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Lint with pylint
+      run: |
+        make lint
+    - name: Test with pytest
+      run: |
+        make test
+```
+
+Lasly i put the changes to GitHub and verify both ``lint`` and ``test``
+
+See screenshoot below 
+
+![Git Action screenshoot](Screenshoots/Git-action.PNG "Git Action screenshoot")
 
