@@ -12,9 +12,18 @@ This project demonstrate how to build Github repository from scratch and creaton
   * Application code to perform an initial lint, test and install cycle.
   * and lastly Inegrating the project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
 
+A short demo of the project is included here. 
 
-Second project on Azure CI/CD Pipeline 
-
-#This was edited in Azure Cloud Shell
+## Status
 
 [![Python application test with Github Actions](https://github.com/MIZ-KAS/CI-CDpipeline/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/MIZ-KAS/CI-CDpipeline/actions/workflows/pythonapp.yml)
+
+## Project Plan 
+
+### Spreedsheet
+
+In this spreedsheet, I have included a quarterly and yearly plan. also included is a estimated week by week deliverables with an estimated time of difficulity for each task.
+
+https://docs.google.com/spreadsheets/d/1G2UlwSD3HVO32IbAr77t-I1oMyIP3ido7AKpit3aojg/edit?usp=sharing 
+
+ 
