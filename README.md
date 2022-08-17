@@ -54,5 +54,13 @@ lint:
 all: install lint test
 ```
  
+ ## Creating the requirements.txt
  
- 
+   ```bashinstall:
+pylint
+pytest
+Flask==2.0.3
+pandas==0.24.2
+scikit-learn==0.20.3
+jinja2==3.0
+```
