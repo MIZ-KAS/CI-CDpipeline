@@ -218,3 +218,7 @@ From Azure CLI do Git pull and Push so that everything will be up to date
 To make the application globally so user can run a predict at one click.
 	
 ## Demo Video
+
+Video demonstration   [here](https://www.youtube.com/watch?v=O_ah4v_l7uE)
+
+
