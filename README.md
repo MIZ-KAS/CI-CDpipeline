@@ -145,4 +145,15 @@ Deploy the web app to azure using az webapp up -n <your-appservice>
 	
 ![Deploying web app screenshoot](Screenshoots/deploy-webapp.PNG "Deploying webapp screenshoot")	
 	
+Check if the app is up and running by opening the URL containing the webapp name provided in the previous step: https://azurecicdpipleline.azurewebsites.net/
+	
+	
+![Deployed webapp Output screenshoot](Screenshoots/output.PNG "Deployed webapp screenshoot")	
+	
+Edit file 'make_predict_azure_app.sh' and replace '< yourappname >' with your webapp name (e.g. azurecicdpipeline).
+
+Test the remote webapp:
+
+
+![Remove predicition screenshoot](Screenshoots/remore-prediction.PNG "Remote prediction screenshoot")	
 	
