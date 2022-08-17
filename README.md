@@ -128,3 +128,10 @@ See screenshoot below
 
 ![Git Action screenshoot](Screenshoots/Git-action.PNG "Git Action screenshoot")
 
+## Continuous Delivery on Azure
+
+Final step in the project is to set Continuous Delivery using Azure technologies. This will involve setting up Azure Pipelines to deploy the [Flask starter](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files) code to Azure App Services.
+
+![Adding-flaskcode screenshoot](Screenshoots/adding-flaskcode.PNG "Adding-flaskcoden screenshoot")
+
+
