@@ -36,7 +36,7 @@ In the [trello board](https://trello.com/invite/b/pXPo2Yyz/afce1f39f9ca2cc8c565c
  
  I created a [GitHub](https://github.com/MIZ-KAS/CI-CDpipeline) Repo then created a ssh-keys in my Azure Cloud Shell environment after which i clone the newly created repo into Azure Cloud Shell, screenshoot below
  
-![Clone repo / Showing Git clone environment](screenshots/git clone.PNG "Clone repo / Showing Git clone environment")
+![Clone repo / Showing Git clone environment](screenshots/git-clone.PNG "Clone repo / Showing Git clone environment")
  
  
  
