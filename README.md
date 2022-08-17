@@ -14,6 +14,12 @@ This project demonstrate how to build Github repository from scratch and creaton
 
 A short demo of the project is included here. 
 
+## Architectural Diagram
+
+Fine below flow of the project 
+
+![Architectural Diagram screenshoot](Screenshoots/diagram.PNG "Architectural Diagram screenshoot")
+
 ## Status
 
 [![Python application test with Github Actions](https://github.com/MIZ-KAS/CI-CDpipeline/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/MIZ-KAS/CI-CDpipeline/actions/workflows/pythonapp.yml)
