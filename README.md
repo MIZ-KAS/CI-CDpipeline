@@ -162,7 +162,21 @@ Test the remote webapp:
 
 
 ![Remove predicition screenshoot](Screenshoots/remore-prediction.PNG "Remote prediction screenshoot")	
+
+#### Logs of your running webapp via Azure Cloud shell
 	
+```bash
+(.CI-CDpipeline) lawal@Azure:~/CI-CDpipeline$ az webapp log tail
+```	
+![Log tail screenshoot](Screenshoots/logtail.PNG "Log Tail screenshoot")	
+	
+#### Performance validation of the webapp can be performed via a load test using [locust](https://locust.io/). Replace '< yourappname >' in the provided configuration and call locust:
+	
+```bash
+(.CI-CDpipeline) lawal@Azure:~/CI-CDpipeline$ locust -f locustfile.py --headless -u 20 -r 5 -t 20s
+```	
+	
+![locustfile screenshoot](Screenshoots/locustfile.PNG "locustfile screenshoot")	
 	
 	
 ## Setting up CI/CD using Azure Pipelines
