@@ -24,6 +24,20 @@ A short demo of the project is included here.
 
 In this [spreedsheet](https://docs.google.com/spreadsheets/d/1G2UlwSD3HVO32IbAr77t-I1oMyIP3ido7AKpit3aojg/edit?usp=sharing), I have included a quarterly and yearly plan. also included is a estimated week by week deliverables with an estimated time of difficulity for each task.
 
- 
 
+### Trello Board 
+
+In the [trello board](https://trello.com/invite/b/pXPo2Yyz/afce1f39f9ca2cc8c565ca5800a6fad4/project-2-building-a-ci-cd-pipeline) i have included a simple board based flow as below
+ * To Do,
+ * In Progress and 
+ * Done
+
+ ## Create the Cloud-Based Development Environment
+ 
+ I created a [GitHub](https://github.com/MIZ-KAS/CI-CDpipeline) Repo then created a ssh-keys in my Azure Cloud Shell environment after which i clone the newly created repo into Azure Cloud Shell, screenshoot below
+ 
+ ![gitclone](https://drive.google.com/file/d/1_Ir1zg0PGcg0M7F3oeYi7XJ95Fxm_bVN/view?usp=sharing)
+ 
+ 
+ 
  
