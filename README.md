@@ -6,11 +6,12 @@
 
 ## Overview
 
-This project demonstrate how to build Github repository from scratch and creatong a scaffolding that will assist in performing both COntinuous integration and Continuous Delivery. Some of the other actions incloud 
+This project demonstrates how to build GitHub repository from scratch and creating a scaffolding that will assist in performing both Continuous integration and Continuous Delivery. Some of the other actions include 
 
   * Creating Github Actions along with a Makefile, requirement.txt file
-  * Application code to perform an initial lint, test and install cycle.
-  * and lastly Inegrating the project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
+  * Application code to perform initial lint, test and install cycle.
+  * And lastly integrating the project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
+
 
 A short demo of the project is included here. 
 
@@ -42,7 +43,7 @@ In the [trello board](https://trello.com/invite/b/pXPo2Yyz/afce1f39f9ca2cc8c565c
 
  ## Create the Cloud-Based Development Environment
  
- I created a [GitHub](https://github.com/MIZ-KAS/CI-CDpipeline) Repo then created a ssh-keys in my Azure Cloud Shell environment after which i clone the newly created repo into Azure Cloud Shell, screenshoot below
+ I created a [GitHub](https://github.com/MIZ-KAS/CI-CDpipeline) Repo then created a ssh-keys in my Azure Cloud Shell environment after which i clone the newly created repo into Azure Cloud Shell, screenshot below
  
 ![Git clone](Screenshoots/git-clone.PNG "Project Cloned into Azure Cloud shell")
 
@@ -90,9 +91,9 @@ source ~/.CI-CDpipeline/bin/activate
 
 Testing it locally to check the prediction by running python app.py and running ./make_prediction.sh to see the prediction locally 
 
-![Running python app.py screenshoot](Screenshoots/python-app-py.PNG "Running python app.py screenshoott")
+![Running python app.py screenshoot](Screenshoots/python-app-py.PNG "Running python app.py screenshot")
 
-![Local prediction screenshoot](Screenshoots/local-prediction.PNG "Local prediction screenshoot")
+![Local prediction screenshot](Screenshoots/local-prediction.PNG "Local prediction screenshot")
 
 
 ## CI: Configure GitHub Actions
@@ -128,17 +129,17 @@ jobs:
         make test
 ```
 
-Lasly i put the changes to GitHub and verify both ``lint`` and ``test``
+Lastly i put the changes to GitHub and verify both ``lint`` and ``test``
 
-See screenshoot below 
+See screenshot below 
 
-![Git Action screenshoot](Screenshoots/Git-action.PNG "Git Action screenshoot")
+![Git Action screenshot](Screenshoots/Git-action.PNG "Git Action screenshot")
 
 ## Continuous Delivery on Azure
 
 Final step in the project is to set Continuous Delivery using Azure technologies. This will involve setting up Azure Pipelines to deploy the [Flask starter](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files) code to Azure App Services.
 
-![Adding-flaskcode screenshoot](Screenshoots/adding-flaskcode.PNG "Adding-flaskcoden screenshoot")
+![Adding-flaskcode screenshot](Screenshoots/adding-flaskcode.PNG "Adding-flaskcode screenshot")
 
 ## Deploying to Azure App Services
 
@@ -149,26 +150,26 @@ Deploy the web app to azure using az webapp up -n <your-appservice>
 (.CI-CDpipeline) lawal@Azure:~/CI-CDpipeline$ az webapp up -n azurecicdpipeline
 ```
 	
-![Deploying web app screenshoot](Screenshoots/deploy-webapp.PNG "Deploying webapp screenshoot")	
+![Deploying web app screenshot](Screenshoots/deploy-webapp.PNG "Deploying webapp screenshot")	
 	
 Check if the app is up and running by opening the URL containing the webapp name provided in the previous step: https://azurecicdpipleline.azurewebsites.net/
 	
 	
-![Deployed webapp Output screenshoot](Screenshoots/output.PNG "Deployed webapp screenshoot")	
+![Deployed webapp Output screenshot](Screenshoots/output.PNG "Deployed webapp screenshot")	
 	
 Edit file 'make_predict_azure_app.sh' and replace '< yourappname >' with your webapp name (e.g. azurecicdpipeline).
 
 Test the remote webapp:
 
 
-![Remove predicition screenshoot](Screenshoots/remore-prediction.PNG "Remote prediction screenshoot")	
+![Remove prediction screenshot](Screenshoots/remore-prediction.PNG "Remote prediction screenshot")	
 
 #### Logs of your running webapp via Azure Cloud shell
 	
 ```bash
 (.CI-CDpipeline) lawal@Azure:~/CI-CDpipeline$ az webapp log tail
 ```	
-![Log tail screenshoot](Screenshoots/logtail.PNG "Log Tail screenshoot")	
+![Log tail screenshot](Screenshoots/logtail.PNG "Log Tail screenshot")	
 	
 #### Performance validation of the webapp can be performed via a load test using [locust](https://locust.io/). Replace '< yourappname >' in the provided configuration and call locust:
 	
@@ -178,7 +179,7 @@ Using the parameters above locust will use 20 users with a spawn rate of 5 users
 (.CI-CDpipeline) lawal@Azure:~/CI-CDpipeline$ locust -f locustfile.py --headless -u 20 -r 5 -t 20s
 ```	
 	
-![locustfile screenshoot](Screenshoots/locustfile.PNG "locustfile screenshoot")	
+![locustfile screenshot](Screenshoots/locustfile.PNG "locustfile screenshot")	
 	
 	
 ## Setting up CI/CD using Azure Pipelines
@@ -193,9 +194,9 @@ Using the parameters above locust will use 20 users with a spawn rate of 5 users
 	
 	
 	
-![First build screenshoot](Screenshoots/first-pipeline.PNG "First build")	
+![First build screenshot](Screenshoots/first-pipeline.PNG "First build")	
 	
-![Final build screenshoot](Screenshoots/final-build.PNG "First build")	
+![Final build screenshot](Screenshoots/final-build.PNG "First build")	
 	
 	
 From now on every change to your code will trigger the CI/CD pipeline and update your webapp accordingly:
@@ -203,14 +204,14 @@ From now on every change to your code will trigger the CI/CD pipeline and update
 See below example of resent work after deployment 
 
 	
-![Example change screenshoot](Screenshoots/examplechange.PNG "Example change")	
+![Example change screenshot](Screenshoots/examplechange.PNG "Example change")	
 
 	
 ## Final step 
 	
-From Azure CLI do Git pull and Push so that every thing will be upto date
+From Azure CLI do Git pull and Push so that everything will be up to date
 
-![Git pull and push screenshoot](Screenshoots/gitpullandpush.PNG "Git pull")
+![Git pull and push screenshot](Screenshoots/gitpullandpush.PNG "Git pull")
 	
 ## Enhancements
 	
