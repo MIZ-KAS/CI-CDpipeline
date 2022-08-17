@@ -181,7 +181,7 @@ From now on every change to your code will trigger the CI/CD pipeline and update
 See below example of resent work after deployment 
 
 	
-![Example change screenshoot](Screenshoots/examplechage.PNG "Example change")	
+![Example change screenshoot](Screenshoots/examplechange.PNG "Example change")	
 
 	
 ## Final step 
