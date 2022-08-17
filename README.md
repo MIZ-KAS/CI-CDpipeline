@@ -64,3 +64,19 @@ pandas==0.24.2
 scikit-learn==0.20.3
 jinja2==3.0
 ```
+
+ ## Creating the Python Virtual Environment and source into it
+ 
+   ```bashinstall:
+python3 -m venv ~/.CI-CDpipeline
+source ~/.CI-CDpipeline/bin/activate
+```
+
+## Local test 
+
+```bash
+(.CI-CDpipeline) lawal@Azure:~/CI-CDpipeline$ make all
+```
+
+![Passed make all screenshoot](Screenshoots/passed-makeall.PNG "Passed make all screenshoot")
+
