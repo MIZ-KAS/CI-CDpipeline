@@ -172,6 +172,8 @@ Test the remote webapp:
 	
 #### Performance validation of the webapp can be performed via a load test using [locust](https://locust.io/). Replace '< yourappname >' in the provided configuration and call locust:
 	
+Using the parameters above locust will use 20 users with a spawn rate of 5 users per second and run for 20 seconds:
+	
 ```bash
 (.CI-CDpipeline) lawal@Azure:~/CI-CDpipeline$ locust -f locustfile.py --headless -u 20 -r 5 -t 20s
 ```	
@@ -210,3 +212,8 @@ From Azure CLI do Git pull and Push so that every thing will be upto date
 
 ![Git pull and push screenshoot](Screenshoots/gitpullandpush.PNG "Git pull")
 	
+## Enhancements
+	
+To make the application globally so user can run a predict at one click.
+	
+## Demo Video
