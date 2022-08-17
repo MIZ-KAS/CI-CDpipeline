@@ -22,8 +22,8 @@ A short demo of the project is included here.
 
 ### Spreedsheet
 
-In this spreedsheet, I have included a quarterly and yearly plan. also included is a estimated week by week deliverables with an estimated time of difficulity for each task.
+In this [spreedsheet] (https://docs.google.com/spreadsheets/d/1G2UlwSD3HVO32IbAr77t-I1oMyIP3ido7AKpit3aojg/edit?usp=sharing), I have included a quarterly and yearly plan. also included is a estimated week by week deliverables with an estimated time of difficulity for each task.
 
-https://docs.google.com/spreadsheets/d/1G2UlwSD3HVO32IbAr77t-I1oMyIP3ido7AKpit3aojg/edit?usp=sharing 
+ 
 
  
