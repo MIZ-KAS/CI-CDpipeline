@@ -214,8 +214,11 @@ From Azure CLI do Git pull and Push so that everything will be up to date
 ![Git pull and push screenshot](Screenshoots/gitpullandpush.PNG "Git pull")
 	
 ## Enhancements
+
+#### Future improvement include 
 	
-To make the application globally so user can run a predict at one click.
+* Further improvement on the user interface of the application to make it user friendly.
+* Users can eastly use a click button for prediction 
 	
 ## Demo Video
 
