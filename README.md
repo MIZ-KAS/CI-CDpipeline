@@ -157,3 +157,21 @@ Test the remote webapp:
 
 ![Remove predicition screenshoot](Screenshoots/remore-prediction.PNG "Remote prediction screenshoot")	
 	
+	
+	
+## Setting up CI/CD using Azure Pipelines
+* Goto Azure DevOps Organizations, create a new project called CICDAzuredev
+* Ensure you set up a new service connection via Azure Resource Manager and Pipeline
+* Goto organizations setting > new service connection (under pipeline) > Azure Resource Manager 
+* Next, select Pipeline and create a new one
+* Create the GitHub Integration
+* Configure python to Linux Web app on Azure
+* Set up the continuous delivery workflow
+
+	
+	
+	
+	
+	
+	
+	
