@@ -225,3 +225,8 @@ From Azure CLI do Git pull and Push so that everything will be up to date
 Video demonstration   [here](https://www.youtube.com/watch?v=O_ah4v_l7uE)
 
 
+	
+## Final Status, just for check
+	
+	
+[![Python application test with Github Actions](https://github.com/MIZ-KAS/CI-CDpipeline/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/MIZ-KAS/CI-CDpipeline/actions/workflows/pythonapp.yml)
